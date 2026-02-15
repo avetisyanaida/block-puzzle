@@ -49,7 +49,6 @@ export function BlockPuzzleGame() {
         playGameOver,
         enabled,
         toggle,
-        playCombo,
     } = useGameSounds()
 
     useEffect(() => {
@@ -77,7 +76,6 @@ export function BlockPuzzleGame() {
             playPlace,
             playClear,
             playGameOver,
-            playCombo
         }
     })
 
@@ -105,8 +103,6 @@ export function BlockPuzzleGame() {
             if (combo === 1) bonus = 9
             else if (combo === 2) bonus = 13
             else if (combo >= 3) bonus = 19
-
-            playCombo()
 
             setTimeLeft((prev) => prev + bonus)
         }
