@@ -1,11 +1,15 @@
 .wrapper {
-  min-height: 100dvh;
   padding: 24px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #0f172a;
   color: white;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  position: fixed;
+  touch-action: none;
 }
 
 /* HEADER */
@@ -89,6 +93,12 @@
   font-weight: bold;
   animation: bounce 0.4s infinite alternate;
 }
+.gridWrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @keyframes bounce {
   from { transform: translateY(0); }
@@ -98,7 +108,6 @@
 /* TRAY */
 
 .tray {
-  margin-top: 32px;
   width: 100%;
   max-width: 420px;
   display: flex;
@@ -107,6 +116,8 @@
   border-radius: 16px;
   background: #1e293b;
   border: 1px solid #334155;
+  flex-shrink: 0;
+  margin: auto 20px 0 20px;
 }
 
 /* MODAL */

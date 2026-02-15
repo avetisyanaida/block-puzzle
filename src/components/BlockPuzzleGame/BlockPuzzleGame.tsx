@@ -115,7 +115,7 @@ export function BlockPuzzleGame() {
     return (
         <div className={styles.wrapper}>
 
-            <h2>BLOCK PUZZLE GAME</h2>
+            <h2 style={{margin: 0}}>BLOCK PUZZLE GAME</h2>
 
             {/* Sound Button */}
             <button onClick={toggle} className={styles.soundButton}>
