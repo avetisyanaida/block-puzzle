@@ -1,0 +1,181 @@
+.wrapper {
+  min-height: 100dvh;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+
+.soundButton {
+  padding: 8px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+}
+
+.soundButton:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.header {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.score {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.time {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.timeDanger {
+  color: #ef4444;
+}
+
+.bestRow {
+  display: flex;
+  align-items: center;
+  gap: 8px; // 👈 gap ավելացրինք
+  color: #f59e0b;
+}
+
+/* COMBO */
+
+.combo {
+  margin-bottom: 10px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #22c55e;
+  font-weight: bold;
+  animation: bounce 0.4s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-4px); }
+}
+
+/* TRAY */
+
+.tray {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  border-radius: 16px;
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+/* MODAL */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal {
+  background: #1e293b;
+  padding: 32px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.modalTitle {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.finalScore {
+  font-size: 48px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.playButton {
+  padding: 12px 32px;
+  border-radius: 12px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.playButton:hover {
+  transform: scale(1.05);
+}
+
+.playButton:active {
+  transform: scale(0.95);
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

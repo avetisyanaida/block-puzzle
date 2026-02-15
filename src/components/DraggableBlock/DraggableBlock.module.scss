@@ -1,0 +1,34 @@
+.blockWrapper {
+  cursor: grab;
+  user-select: none;
+  border-radius: 12px;
+  padding: 8px;
+  transition: transform 0.15s ease;
+}
+
+.blockWrapper:active {
+  cursor: grabbing;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  margin: 0.5px;
+  border-radius: 4px;
+}
+
+.filled {
+  background: #3b82f6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.empty {
+  background: transparent;
+}
