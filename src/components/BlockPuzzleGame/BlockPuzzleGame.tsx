@@ -39,7 +39,7 @@ export function BlockPuzzleGame() {
     const cellSize = useResponsiveCellSize()
     const previewCellSize = Math.floor(cellSize * 0.6)
 
-    const [timeLeft, setTimeLeft] = useState(90)
+    const [timeLeft, setTimeLeft] = useState(180)
     const [timeOver, setTimeOver] = useState(false)
     const {
         init,
@@ -102,9 +102,9 @@ export function BlockPuzzleGame() {
         if (combo > 0 && !gameOver && !timeOver) {
             let bonus = 0
 
-            if (combo === 1) bonus = 3
-            else if (combo === 2) bonus = 6
-            else if (combo >= 3) bonus = 9
+            if (combo === 1) bonus = 9
+            else if (combo === 2) bonus = 13
+            else if (combo >= 3) bonus = 19
 
             playCombo()
 

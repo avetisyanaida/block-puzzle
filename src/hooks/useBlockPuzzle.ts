@@ -143,8 +143,9 @@ export function useBlockPuzzle({sounds}: {
     )
 
     const handleDragStart = useCallback((_blockId: number, shape: number[][]) => {
+        sounds.playClick()
         activeBlockRef.current = { id: _blockId, shape }
-    }, [])
+    }, [sounds.playClick])
 
     const handleDragMove = useCallback(
         (absX: number, absY: number) => {
@@ -186,7 +187,7 @@ export function useBlockPuzzle({sounds}: {
                 const { newBoard, cleared, clearingCells: cells } = checkAndClear(next)
 
                 if (cleared > 0) {
-                    // sounds.playClear()
+                    sounds.playClear()
                     setClearingCells(cells)
                     setCombo((prev) => prev + 1)
                     setTimeout(() => setClearingCells(new Set()), 300)

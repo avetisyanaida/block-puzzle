@@ -16,6 +16,15 @@ interface DraggableBlockProps {
     disabled: boolean
 }
 
+const COLORS = [
+    "#4F46E5", // indigo
+    "#06B6D4", // cyan
+    "#22C55E", // green
+    "#F59E0B", // amber
+    "#EF4444", // red
+    "#A855F7", // purple
+]
+
 export function DraggableBlock({
                                    block,
                                    blockId,
@@ -27,6 +36,7 @@ export function DraggableBlock({
                                    onDragCancel,
                                    disabled,
                                }: DraggableBlockProps) {
+    const color = COLORS[blockId % COLORS.length]
     const isDragging = useRef(false)
     const dragRef = useRef<HTMLDivElement | null>(null)
     const ghostRef = useRef<HTMLDivElement | null>(null)
@@ -52,7 +62,7 @@ export function DraggableBlock({
                     cellDiv.style.margin = "1px"
                     cellDiv.style.borderRadius = "3px"
                     if (cell === 1) {
-                        cellDiv.style.backgroundColor = "hsl(var(--primary))"
+                        cellDiv.style.backgroundColor = color;
                         cellDiv.style.boxShadow = "inset 0 -2px 4px rgba(0,0,0,0.15), inset 0 1px 2px rgba(255,255,255,0.2)"
                     } else {
                         cellDiv.style.backgroundColor = "transparent"
@@ -84,7 +94,7 @@ export function DraggableBlock({
             document.body.appendChild(ghost)
             ghostRef.current = ghost
         },
-        [block, cellSize]
+        [block, cellSize, color]
     )
 
     const handlePointerDown = useCallback(
@@ -166,7 +176,9 @@ export function DraggableBlock({
                             style={{
                                 width: previewCellSize,
                                 height: previewCellSize,
+                                backgroundColor: cell === 1 ? color : "transparent",
                             }}
+
                         />
                     ))}
                 </div>
