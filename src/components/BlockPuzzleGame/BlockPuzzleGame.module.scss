@@ -1,12 +1,10 @@
 .wrapper {
-  min-height: 100dvh;
   padding: 24px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #0f172a;
   color: white;
-  height: 100dvh;
   overflow: hidden;
   overscroll-behavior: none;
 }
@@ -167,18 +165,4 @@
 
 .playButton:active {
   transform: scale(0.95);
-}
-
-/* FOOTER */
-
-.footer {
-  margin-top: 10px;
-  display: flex;
-  gap: 20px;
-  font-size: 14px;
-  color: #94a3b8;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }

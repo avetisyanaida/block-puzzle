@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import React from "react"
 import Script from "next/script";
+import '../components/Footer/Footer.scss';
 
 export const metadata: Metadata = {
     title: "Block Puzzle Game",

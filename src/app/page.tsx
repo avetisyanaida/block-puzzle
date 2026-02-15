@@ -1,6 +1,8 @@
 "use client"
 
 import dynamic from "next/dynamic"
+import {Footer} from "@/components/Footer/Footer";
+
 
 const BlockPuzzleGame = dynamic(
     () =>
@@ -11,5 +13,8 @@ const BlockPuzzleGame = dynamic(
 )
 
 export default function Home() {
-  return <BlockPuzzleGame />
+  return <>
+      <BlockPuzzleGame />
+      <Footer/>
+  </>
 }

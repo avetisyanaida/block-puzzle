@@ -242,10 +242,7 @@ export function BlockPuzzleGame() {
             )}
 
             {/* Footer */}
-            <footer className={styles.footer}>
-                <a style={{color: 'white'}} href="/about">About</a>
-                <a style={{color: "white"}} href="/privacy">Privacy Policy</a>
-            </footer>
+
 
         </div>
     )

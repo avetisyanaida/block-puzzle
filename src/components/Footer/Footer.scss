@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+  background: #0f172a;
+  padding: 0 20px 20px 20px;
+  justify-content: center;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
