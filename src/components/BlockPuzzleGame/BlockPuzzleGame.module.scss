@@ -88,7 +88,19 @@
   border-radius: 999px;
   background: #22c55e;
   font-weight: bold;
-  animation: bounce 0.4s infinite alternate;
+  //animation: bounce 0.4s infinite alternate;
+  animation: popIn 0.5s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  pointer-events: none;
+}
+@keyframes popIn {
+  0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+  80% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 }
 
 @keyframes bounce {

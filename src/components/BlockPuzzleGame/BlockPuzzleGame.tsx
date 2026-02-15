@@ -159,7 +159,7 @@ export function BlockPuzzleGame() {
             )}
 
             {/* Grid */}
-            <div className={styles.gridWrapper} ref={gridRef}>
+            <div className={styles.gridWrapper} ref={gridRef} style={{position: 'relative'}}>
                 <GameGrid
                     grid={grid}
                     cellSize={cellSize}
