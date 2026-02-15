@@ -39,7 +39,7 @@ export function BlockPuzzleGame() {
     const cellSize = useResponsiveCellSize()
     const previewCellSize = Math.floor(cellSize * 0.6)
 
-    const [timeLeft, setTimeLeft] = useState(180)
+    const [timeLeft, setTimeLeft] = useState(90)
     const [timeOver, setTimeOver] = useState(false)
     const {
         init,
