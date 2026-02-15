@@ -236,10 +236,6 @@ export function BlockPuzzleGame() {
                     </div>
                 </div>
             )}
-
-            {/* Footer */}
-
-
         </div>
     )
 }
