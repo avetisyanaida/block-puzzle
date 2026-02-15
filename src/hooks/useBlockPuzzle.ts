@@ -143,8 +143,7 @@ export function useBlockPuzzle({sounds}: {
 
     const handleDragStart = useCallback((_blockId: number, shape: number[][]) => {
         activeBlockRef.current = { id: _blockId, shape }
-        sounds.playClick()
-    }, [sounds.playClick])
+    }, [])
 
     const handleDragMove = useCallback(
         (absX: number, absY: number) => {
