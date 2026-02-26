@@ -1,0 +1,8 @@
+{
+	"appId": "com.aida.blockpuzzle",
+	"appName": "Block Puzzle Extreme",
+	"webDir": "out",
+	"server": {
+		"androidScheme": "https"
+	}
+}

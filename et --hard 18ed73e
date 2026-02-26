@@ -1,0 +1,25 @@
+[33m5dd6f28[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: Branch: renamed refs/heads/main to refs/heads/main
+[33m5dd6f28[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: change files add txt file
+[33m18ed73e[m HEAD@{3}: commit: change combo syle
+[33m7252777[m HEAD@{4}: commit: change combo top%
+[33m600c92b[m HEAD@{5}: commit: delete combo
+[33m6d1db44[m HEAD@{6}: commit: click start deleted
+[33mcee8ee5[m HEAD@{7}: commit: change sounds
+[33mb4e7cc0[m HEAD@{8}: commit: change clickCombo
+[33m96dece4[m HEAD@{9}: commit: change styles
+[33m17529ce[m HEAD@{10}: commit: change styles global
+[33mce1f4ff[m HEAD@{11}: commit: change footer styles
+[33m5df9397[m HEAD@{12}: commit: change styles
+[33m99870d3[m HEAD@{13}: commit: change puzzle styles
+[33m9bc2311[m HEAD@{14}: commit: change times in puzzle game
+[33m0203f86[m HEAD@{15}: commit: change styles for grids
+[33mc004ebc[m HEAD@{16}: commit: change sounds
+[33m15c6a5f[m HEAD@{17}: commit: add robots.txt file
+[33m429aada[m HEAD@{18}: commit: add txt file
+[33m79b2655[m HEAD@{19}: commit: change styles in footer
+[33m14cbcb0[m HEAD@{20}: commit: add adsense tags
+[33mc196279[m HEAD@{21}: commit: changes config.ts
+[33m84a6237[m HEAD@{22}: commit: Sync updates
+[33m3749844[m HEAD@{23}: commit: Add block puzzle game and remove template
+[33m84e70eb[m HEAD@{24}: Branch: renamed refs/heads/master to refs/heads/main
+[33m84e70eb[m HEAD@{26}: commit (initial): Initial commit from Create Next App
